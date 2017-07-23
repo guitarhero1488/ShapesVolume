@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both; 
+}
+
+.logo {
+    margin: 0 auto;
+    border-radius: 50%;
+    background: url("img/logo.png") 50% no-repeat #fff;
+    height: 80px;
+    width: 80px;
+}
+
+.error {
+    border: 2px solid #dc0800 !important;
+}
+
+.status {
+    clear: both;
+    color: #dc0800;
+    text-align: center;
+    padding-top: 5px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+/*----MODAL WINDOW----*/
+
+#modal-window {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    display: none;
+    background: rgba(12,12,12,0.9);
+}
+
+#modal-window .modal-form {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid #333;
+    box-sizing: border-box;
+}
+
+#modal-window .form-head {
+    background: #7ea6e0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#modal-window .form-head .modal-form-title {
+    color: #fff;
+    font-size: 1.25em;
+}
+
+#modal-window .form-head #cross {
+    font-size: 20px;
+    right: 0;
+    top: 0;
+    width: 23px;
+    margin: 5px;
+    position: absolute;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#modal-window .form-head #cross:hover {
+    background: #fff;
+    cursor: pointer;
+}
+
+#modal-window #calculation {
+    padding: 15px 0;
+}
+
+#modal-window #calculation p {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#modal-window .form-body {
+    padding: 20px 40px;
+    margin: 0 auto;
+}
+
+#modal-window input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    font-size: 0.75em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#modal-window input:focus {
+    border-color: #5389d6;
+    outline: none;
+}
+
+#modal-window .form-body #report {
+    background: linear-gradient(to top, #7ea6e0, #fff);
+    font-size: 1.25em;
+    color: #fff;
+    border: none;
+}
+
+#modal-window .form-body #report:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom, #7ea6e0, #fff);
+}
+
+#modal-window .form-body .ok{
+    color: #02735f;
+    text-align: center;
+}
+
+/*----END MODAL WINDOW----*/
+
+/*----HEADER----*/
+
+header {
+    background: linear-gradient(to bottom, rgba(167, 223, 255, 0.3), #fff);
+}
+
+header .header-fio, .header-phone {
+    font-weight: bold;
+    padding: 30px 0;
+    font-size: 1.25em;
+    width: 33.3%;
+}
+
+header .header-logo {
+    float: left;
+    text-align: center;
+    width: 33.3%;
+}
+
+header .header-fio {
+    text-align: center;
+    float: left;
+}
+
+header .header-phone {
+    float: right;
+    text-align: right;
+}
+
+/*----END HEADER----*/
+/*----SECTION----*/
+
+section {
+    background: url('img/background.png') 45% no-repeat;
+    background-size: contain;
+    min-height: 600px;
+}
+
+section .content {
+    font-size: 2em;
+    box-sizing: border-box;
+    padding: 10px 40px;
+    float: left;
+    text-align: right;
+    width: 70%;
+    margin-top: 160px;
+}
+
+section .calc-form {
+    background: #fff;
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    float: right;
+    box-sizing: border-box;
+    width: 29%;
+    margin-right: 1%;
+}
+
+section .calc-form input, select {
+    border-radius: 3px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+
+}
+
+section .calc-form input:focus {
+    border: 2px solid #5389d6;
+    outline: none;
+}
+
+section .calc-form select:focus {
+    border: 2px solid #5389d6;
+    outline: none;
+    margin-top: -2px;
+}
+
+section .calc-form .p-params, .c-params, .required-params {
+    display: none;
+}
+
+section .calc-form .shows {
+    display: block;
+}
+
+section .calc-form .line-value {
+    width: 75%;
+    float: left;
+}
+
+section .calc-form .line {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+section .calc-form .number {
+    margin-bottom: 0;
+}
+
+section .calc-form .number-status {
+    padding: 5px 0 10px;
+}
+
+section .calc-form .measure {
+    width: 23%;
+    float: right;
+}
+
+section .calc-form #calculate {
+    background: linear-gradient(to top, #ccc, #fff);
+    border: none;
+}
+
+section .calc-form #calculate:hover {
+    background: linear-gradient(to bottom, #ccc, #fff);
+    cursor: pointer;
+}
+
+/*----END SECTION----*/
+/*----FOOTER----*/
+
+footer {
+    background: linear-gradient(to top, rgba(255, 212, 160, 0.3), #fff);
+}
+
+footer .footer-info {
+    text-align: center;
+    margin-left: 70%;
+}
+
+footer .footer-fio, .footer-phone {
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+footer .policy {
+    font-size: 0.75em;
+    padding: 10px 0 10px 40px;
+    box-sizing: border-box;
+}
+
+/*----END FOOTER----*/
+
+
+@media screen and (min-width: 1024px) {
+    section .content {
+        text-align: center;
+    }
+}
+ 
+@media screen  and (max-width: 1023px) {
+    section .content {
+        width: 50%;
+    }
+
+    section .calc-form {
+        width: 49%;
+    }
+}
+ 
+@media screen and (max-width: 525px) {
+    #modal-window .modal-form {
+        width: auto;
+    }
+
+    header .header-logo {
+        width: 100%;
+    }
+
+    header .header-fio {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    header .header-phone {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    section .content {
+        width: 100%;
+        margin: 0;
+        padding: 0 0 15px;
+        text-align: center;
+    }
+
+    section .calc-form {
+        width: 100%;
+        margin: 0;
+    }
+
+    footer .footer-info {
+        margin: 0 auto;
+    }
+
+    footer .policy {
+        padding: 40px 0 20px;
+        text-align: center;
+    }
+}

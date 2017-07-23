@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Shapes volume</title>
+</head>
+<body>
+    <header class="clearfix">
+        <div class="header-logo">
+            <div class="logo"></div>
+        </div>
+        <div class="header-fio">ФИО</div>
+        <div class="header-phone">Телефон</div>
+    </header>
+    <section class="clearfix">
+        <div id="modal-window">
+            <div class="modal-form">
+                <div class="form-head clearfix">
+                    <span class="modal-form-title">Расчет</span>
+                    <span id="cross" title="Закрыть">&#215;</span>
+                </div>
+                <div id="calculation"></div>
+                <div class="form-head"><span class="modal-form-title">Отправить результат</span></div>
+                <div class="form-body">
+                    <form id="result-form" action="" method="post">
+                        <div class="field">
+                            <input class="data" type="text" name="fio" placeholder="ФИО">
+                            <div class="fio-status status"></div>
+                        </div>
+                        <div class="field">
+                            <input class="data" type="text" name="phone" placeholder="Телефон">
+                            <div class="phone-status status"></div>
+                        </div>
+                        <div class="field">
+                            <input class="data" type="text" name="email" placeholder="Email">
+                            <div class="email-status status"></div>
+                        </div>
+                        <input id="report" type="button" value="Оправить">
+                    </form>
+                    <div id="send-status" class="status"></div>
+                </div>
+            </div>
+        </div>
+        <h1>РАСЧЕТ ОБЪЕМА ГЕОМЕТРИЧЕСКИХ ФИГУР</h1>
+        <div class="content">Здесь и сейчас</div>
+        <div class="calc-form">
+            <form action="">
+                <h4>Геометрическая фигура</h4>
+                <select class="line shows" name="shape" id="shapes">
+                    <option selected disabled hidden>Тип фигуры</option>
+                    <option value="Параллелепипед">Параллелепипед</option>
+                    <option value="Цилиндр">Цилиндр</option>
+                </select>
+                <p class="shape-status"></p>
+                <div class="p-params">
+                    <div class="line length clearfix">
+                        <input type="text" name="length" class="line-value" placeholder="Длина">
+                        <select name="length-measure" class="measure">
+                            <option value="м" selected>м</option>
+                            <option value="см">см</option>
+                        </select>
+                        <p class="length-status status"></p>
+                    </div>
+                    <div class="line width clearfix">
+                        <input type="text" name="width" class="line-value" placeholder="Ширина">
+                        <select name="width-measure" class="measure">
+                            <option value="м" selected>м</option>
+                            <option value="см">см</option>
+                        </select>
+                        <p class="width-status status"></p>
+                    </div>
+                    <div class="line p-height clearfix">
+                        <input type="text" name="p-height" class="line-value" placeholder="Высота">
+                        <select name="height-measure" class="measure">
+                            <option value="м" selected>м</option>
+                            <option value="см">см</option>
+                        </select>
+                        <p class="p-height-status status"></p>
+                    </div>
+                </div>
+                <div class="c-params">                    
+                    <div class="line diameter clearfix">
+                        <input type="text" name="diameter" class="line-value" placeholder="Диаметр">
+                        <select name="diameter-measure" class="measure">
+                            <option value="м" selected>м</option>
+                            <option value="см">см</option>
+                        </select>
+                        <p class="diameter-status status"></p>
+                    </div>
+                    <div class="line c-height clearfix">
+                        <input type="text" name="c-height" class="line-value" placeholder="Высота">
+                        <select name="height-measure" class="measure">
+                            <option value="м" selected>м</option>
+                            <option value="см">см</option>
+                        </select>
+                        <p class="c-height-status status"></p>
+                    </div>
+                </div>
+                <div class="required-params">
+                    <input name="number" class="line line-value number" type="text" placeholder="Количество">
+                    <p class="number-status status"></p>
+                    <input id="calculate" class="line" type="button" value="Рассчитать">
+                </div>
+            </form>
+        </div>
+        <div id="response"></div>
+    </section>
+    <footer class="clearfix">
+        <div class="footer-info">
+            <div class="footer-logo">
+                <div class="logo"></div>
+            </div>
+            <div class="footer-fio">ФИО</div>
+            <div class="footer-phone">Телефон</div>
+        </div>
+        <div class="policy">Copyright &copy; Privacy Policy</div>
+    </footer>
+    <script src="run.js"></script>
+</body>
+</html>
